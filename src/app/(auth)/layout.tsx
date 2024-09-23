@@ -4,12 +4,6 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        <main className="size-full h-screen flex-center-col p-5">
-          {children}
-        </main>
-      </body>
-    </html>
+    <main className="size-full h-screen flex-center-col p-5">{children}</main>
   );
 }
