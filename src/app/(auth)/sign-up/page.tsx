@@ -3,7 +3,7 @@ import Logo from "@/components/logo";
 
 const SignUpPage = () => {
   return (
-    <main className="w-full">
+    <main className="w-full md:w-96">
       <div className="mb-5">
         <Logo size="text-[90px]" />
       </div>
