@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
@@ -7,6 +8,13 @@ export default function Home() {
       <Header />
       <section className="mt-10">
         <p className="text-xl">Previously Watched</p>
+        <div className="flex flex-wrap gap-10 mt-10">
+          <MovieCard />
+          <MovieCard />
+          <MovieCard />
+          <MovieCard />
+          <MovieCard />
+        </div>
       </section>
     </main>
   );
