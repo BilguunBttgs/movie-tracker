@@ -11,7 +11,6 @@ import MovieCard from "../MovieCard";
 const TrendingSwiper = async ({ movies }: { movies: IMovie[] }) => {
   return (
     <section>
-      <p className="text-xl my-5">Trending Movies</p>
       <Carousel>
         <CarouselContent>
           {movies?.map((movie: IMovie) => {

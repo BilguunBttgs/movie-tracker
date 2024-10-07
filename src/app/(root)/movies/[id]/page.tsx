@@ -1,6 +1,7 @@
+import TrendingSwiper from "@/components/ListSwipers/TrendingSwiper";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { getMovieCasts, getMovieDetail } from "@/lib/actions";
+import { getMovieCasts, getMovieDetail, getSimilar } from "@/lib/actions";
 import { Album, Check } from "lucide-react";
 import Image from "next/image";
 
@@ -8,6 +9,7 @@ const MoviePage = async ({ params }: { params: { id: string } }) => {
   const id = params.id;
   const detail: IMovieDetail = await getMovieDetail(id);
   const casts: IMovieCast[] = await getMovieCasts(id);
+  const similarMovies: IMovie[] = await getSimilar(id);
   return (
     <main className="flex-center-col mb-10">
       <div className="w-full">
@@ -47,7 +49,7 @@ const MoviePage = async ({ params }: { params: { id: string } }) => {
           <h2 className="text-xl font-bold">Casts</h2>
           <div className="flex gap-4 w-full flex-wrap mt-4">
             {casts.slice(0, 6).map((cast: IMovieCast) => (
-              <figure className="flex gap-1 items-center">
+              <figure key={cast.cast_id} className="flex gap-1 items-center">
                 <Avatar className="w-16 h-16">
                   <AvatarImage
                     className="object-cover"
@@ -65,6 +67,8 @@ const MoviePage = async ({ params }: { params: { id: string } }) => {
               </figure>
             ))}
           </div>
+          <p className="text-xl mb-5 mt-10 font-bold">Similar Movies</p>
+          <TrendingSwiper movies={similarMovies} />
         </div>
       </section>
     </main>
