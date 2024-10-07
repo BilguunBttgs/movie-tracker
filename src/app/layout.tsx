@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/Header";
 
 const roboto = Roboto({
   weight: "400",
@@ -19,12 +20,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body className={`${roboto.className} antialiased`}>
-        <main className="flex-center-col">
-          {children}
-          <Footer />
-        </main>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="flex-center-col">
+            <Header />
+            {children}
+            <Footer />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
