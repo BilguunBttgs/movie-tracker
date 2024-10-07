@@ -8,8 +8,7 @@ import {
 } from "../ui/carousel";
 import MovieCard from "../MovieCard";
 
-const TrendingSwiper = async () => {
-  const movies = await getTrendings();
+const TrendingSwiper = async ({ movies }: { movies: IMovie[] }) => {
   return (
     <section>
       <p className="text-xl my-5">Trending Movies</p>
