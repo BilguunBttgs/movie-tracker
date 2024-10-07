@@ -17,7 +17,10 @@ const TrendingSwiper = async () => {
         <CarouselContent>
           {movies?.map((movie: IMovie) => {
             return (
-              <CarouselItem className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 ">
+              <CarouselItem
+                key={movie.id}
+                className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 "
+              >
                 <MovieCard movie={movie} />
               </CarouselItem>
             );

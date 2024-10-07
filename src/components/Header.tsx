@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="w-full flex-center-col bg-lightBackgroundSecondary dark:bg-darkBackgroundSecondary">
       <div className="max-w-[1280px] w-full px-11 py-7 flex justify-between items-center">
-        <h1 className="text-blue-600 text-xl font-semibold">
+        <h1 className="text-blue-600 text-xl font-semibold hidden md:block">
           The Movie Tracker
         </h1>
         <div className="flex gap-5">
