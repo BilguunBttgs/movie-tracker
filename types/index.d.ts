@@ -50,3 +50,18 @@ declare interface IMovieCast {
   cast_id: number;
   character: string;
 }
+
+declare interface IAuthorDetail {
+  name: string;
+  username: string;
+  avatar_path: string;
+  rating: number;
+}
+declare interface IMovieReview {
+  author: string;
+  author_details: IAuthorDetail;
+  content: string;
+  created_at: string;
+  id: string;
+  updated_at: string;
+}

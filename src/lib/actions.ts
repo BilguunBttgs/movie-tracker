@@ -38,3 +38,10 @@ export async function getMovieCasts(id: string) {
   );
   return data.cast;
 }
+
+export async function getMovieReviews(id: string) {
+  const { data } = await movieAxios.get(
+    `/3/movie/${id}/reviews?language=en-US&page=1`
+  );
+  return data.results;
+}
