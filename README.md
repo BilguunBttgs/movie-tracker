@@ -1,17 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FilmFolio
 
-## Tech stack
+FilmFolio is a web application for movie enthusiasts to explore, review, and rate films. Inspired by MyAnimeList, FilmFolio offers a platform where users can share their thoughts on movies, browse through a vast collection of films, and discover new favorites.
 
-- Tailwind Css
-- Shadcn
-- TMDB Api
+## Features
+
+- **Movie Database**: Fetch movie details using [TMDB API](https://www.themoviedb.org/).
+- **User Reviews**: Allow users to post reviews and rate movies.
+- **Responsive Design**: Built with Tailwind CSS for a seamless experience across devices.
+- **Shadcn Components**: Leverages Shadcn UI components for a modern and clean UI.
+- **MongoDB**: Stores user data, reviews, and movie interactions in a NoSQL database.
+
+## Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/) with [Tailwind CSS](https://tailwindcss.com/) for styling.
+- **UI Components**: [Shadcn](https://shadcn.dev/) for pre-built UI components.
+- **API Integration**: [TMDB API](https://developers.themoviedb.org/) to fetch movie details.
+- **Database**: [MongoDB](https://www.mongodb.com/) for data storage.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-bun dev
-```
+Ensure you have the following installed on your machine:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org/)
+- [MongoDB](https://www.mongodb.com/)
+- [TMDB API Key](https://www.themoviedb.org/)
