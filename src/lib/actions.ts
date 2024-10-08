@@ -13,6 +13,12 @@ export async function getTrendings() {
   const { data } = await movieAxios.get("/3/trending/all/day?language=en-US");
   return data.results;
 }
+export async function getTopRatedMovies() {
+  const { data } = await movieAxios.get(
+    "/3/movie/top_rated?language=en-US&page=1"
+  );
+  return data.results;
+}
 
 export async function getSimilar(id: string) {
   const { data } = await movieAxios.get(

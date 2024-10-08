@@ -1,4 +1,5 @@
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import Autoplay from "embla-carousel-react";
 import HeroCard from "./HeroCard";
 
 const Hero = ({ movies }: { movies: IMovie[] }) => {
