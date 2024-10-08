@@ -1,6 +1,6 @@
-# FilmFolio
+# FilmFolio - Movie Tracker
 
-FilmFolio is a web application for movie enthusiasts to explore, review, and rate films. Inspired by MyAnimeList, FilmFolio offers a platform where users can share their thoughts on movies, browse through a vast collection of films, and discover new favorites.
+FilmFolio is a web application for movie enthusiasts to explore, review, and rate films. FilmFolio offers a platform where users can share their thoughts on movies, browse through a vast collection of films, and discover new favorites.
 
 ## Features
 
@@ -17,12 +17,3 @@ FilmFolio is a web application for movie enthusiasts to explore, review, and rat
 - **API Integration**: [TMDB API](https://developers.themoviedb.org/) to fetch movie details.
 - **Database**: [MongoDB](https://www.mongodb.com/) for data storage.
 
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed on your machine:
-
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-- [TMDB API Key](https://www.themoviedb.org/)
