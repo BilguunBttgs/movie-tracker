@@ -34,7 +34,7 @@ const MoviePage = async ({ params }: { params: { id: string } }) => {
         <AddButtons />
         <Overview overview={detail.overview} />
         <Casts casts={casts} />
-        <Reviews reviews={reviews} />
+        <Reviews reviews={reviews} avarage={detail.vote_average} />
         <p className="text-xl mb-5 mt-10 font-bold">Similar Movies</p>
         <TrendingSwiper movies={similarMovies} />
       </section>

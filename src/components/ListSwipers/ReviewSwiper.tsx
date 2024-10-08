@@ -29,8 +29,9 @@ const ReviewSwiper = async ({ reviews }: { reviews: IMovieReview[] }) => {
                           className="w-14 h-14 rounded-md"
                           alt={review.author}
                           src={
-                            "https://image.tmdb.org/t/p/original" +
                             review.author_details.avatar_path
+                              ? `https://image.tmdb.org/t/p/original${review.author_details.avatar_path}`
+                              : "https://www.hasbro.com/common/productimages/en_US/D245BA5C34994B1983680EC71B6A4569/6305fc5597efa0cf46958790f2b789aec8e5ee68.jpg"
                           }
                           width={300}
                           height={300}

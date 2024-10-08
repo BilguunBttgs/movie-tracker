@@ -35,6 +35,7 @@ declare interface IMovieDetail {
   runtime: number;
   title: string;
   name: string;
+  vote_average: number;
 }
 declare interface IMovieGenre {
   id: number;
