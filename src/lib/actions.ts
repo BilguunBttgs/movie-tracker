@@ -10,7 +10,10 @@ export async function getRecentMovies() {
 }
 
 export async function getTrendings() {
-  const { data } = await movieAxios.get("/3/trending/all/day?language=en-US");
+  const { data } = await movieAxios.get(
+    "/3/movie/popular?language=en-US&page=1"
+  );
+  console.log("data", data);
   return data.results;
 }
 export async function getTopRatedMovies() {
