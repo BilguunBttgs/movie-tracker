@@ -56,7 +56,7 @@ const AuthForm = ({ type }: IAuthForm) => {
         </div>
         <Button
           type="submit"
-          className="rounded-3xl w-full bg-[#37C6F3] text-white mt-14 h-[52px] text-xl"
+          className="w-full bg-[#37C6F3] text-white mt-14 h-[52px] text-xl"
         >
           {type === "sign-in" ? "Login" : "Register"}
         </Button>
