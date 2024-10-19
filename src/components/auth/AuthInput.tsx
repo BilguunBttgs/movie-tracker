@@ -25,7 +25,7 @@ const AuthInput = (props: IAuthInput) => {
             <FormMessage className="text-red-400 pl-2" />
             <FormControl>
               <Input
-                className="bg-[#D9D9D9] rounded-3xl w-full h-[52px] text-center text-xl"
+                className="bg-[#D9D9D9] w-full h-[52px] text-center"
                 placeholder={placeholder}
                 type={type}
                 {...field}
