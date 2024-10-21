@@ -5,6 +5,7 @@ import { ModeToggle } from "./theme-toggle";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { SquareUser } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Header = () => {
   const pathname = usePathname();
@@ -46,7 +47,12 @@ const Header = () => {
         <div className="flex gap-2 items-center">
           <SearchBar />
           <ModeToggle />
-          <SquareUser strokeWidth={0.5} className="w-11 h-11 text-zinc-200" />
+          <div className="flex gap-2">
+            <SquareUser strokeWidth={0.5} className="w-11 h-11 text-zinc-200" />
+            <Link href="/sign-in">
+              <Button>Signin</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
